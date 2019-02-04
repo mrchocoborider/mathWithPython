@@ -10,14 +10,18 @@ def factors(b):
 
 
 if __name__ == '__main__':
+    while True:
+        b = input('Your Number Please: ')
+        b = float(b)
 
-    b = input('Your Number Please: ')
-    b = float(b)
+        if b > 0 and b.is_integer():
+            factors(int(b))
+        else:
+            print('Please enter a positive integer')
 
-    if b > 0 and b.is_integer():
-        factors(int(b))
-    else:
-        print('Please enter a positive integer')
+        answer = input('Do you want to exit? (y/n)')
+        if answer == 'y':
+            break
 
 
 
