@@ -12,7 +12,11 @@ def roots(a, b, c,):
     print('x2: {}'.format(x_2))
 
 if __name__ == '__main__':
-    a = input('Enter a: ')
-    b = input('Enter b: ')
-    c = input('Enter c: ')
-    roots(float(a), float(b), float(c))
+    while True:
+        a = input('Enter a: ')
+        b = input('Enter b: ')
+        c = input('Enter c: ')
+        roots(float(a), float(b), float(c))
+        answer = input('Do you want to exit? (y/n)')
+        if answer == 'y':
+            break

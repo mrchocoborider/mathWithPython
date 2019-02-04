@@ -33,16 +33,21 @@ def lbs_kilo():
     print('Weight in kilos: {0}'.format(kilos))
 
 if __name__ == '__main__':
-    print_menu()
-    choice = input('Which conversion would you like to do?: ')
-    if choice == '1':
-        km_miles()
+    while True:
+        print_menu()
+        choice = input('Which conversion would you like to do?: ')
+        if choice == '1':
+            km_miles()
 
-    if choice == '2':
-        miles_km()
+        if choice == '2':
+            miles_km()
 
-    if choice == '3':
-        kilo_lbs()
+        if choice == '3':
+            kilo_lbs()
 
-    if choice == '4':
-        lbs_kilo()
+        if choice == '4':
+            lbs_kilo()
+
+        answer = input('Do you want to exit? (y/n)')
+        if answer == 'y':
+            break

@@ -17,12 +17,15 @@ def evenOdd(a):
 
 
 if __name__ == '__main__':
-
-    a = float(input('Enter an integer '))
+    while True:
+        a = float(input('Enter an integer '))
         
-    if a.is_integer():
-        a = int(a)
-        evenOdd(a)
-    else:
-        print('Please enter an integer ')
+        if a.is_integer():
+            a = int(a)
+            evenOdd(a)
+        else:
+            print('Please enter an integer ')
+        answer = input('Do you want to exit? (y/n)')
+        if answer == 'y':
+            break
 
