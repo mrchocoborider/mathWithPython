@@ -13,6 +13,7 @@ temp = [70, 69, 69, 69, 71, 76, 73, 71]
 plt.xlabel = ('Time of day')
 plt.ylabel = ('Temperature')
 plt.xticks(np.arange(len(tod)), tod)
+plt.ylim(0, 80)
 
 plt.plot(tod, temp, marker='o')
 plt.show()
