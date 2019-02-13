@@ -22,15 +22,15 @@ def create_bar_chart(data, labels):
 if __name__ == '__main__':
     try:
         #number of categories
-        ncat = float(input('Enter the number of categories: '))
+        ncat = int(input('Enter the number of categories: '))
         cats = []
         amts = []
-        for i in range(1, int(ncat)+1):
+        for i in range(1, ncat+1):
             cat = input('Enter category: ')
             amt = float(input('Expenditure: '))
             cats.append(cat)
             amts.append(amt)
     except ValueError:
-        print('Enter a valid amount')
+        print('Enter a valid number of categories')
     else:
         create_bar_chart(amts, cats)
